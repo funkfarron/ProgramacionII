@@ -60,13 +60,57 @@ public class TrabajoPractico1 {
      * Crear un arreglo de numeros enteros del 1 al 5, recorrerlos y mostralos de las 2 formas
      */
     public void ejercicio3() {
-        
-    }
-    
+        int numeros[] = new int[5];
+         
+        for (int i=0;i<numeros.length;i++){
+            numeros[i]=i+1;
+        }
+    //mostrando el resultado usando la sentencia For
+        for (int i=0;i<numeros.length;i++){
+            System.out.println(numeros[i]);
+        }
+         
+            System.out.println("");
+         
+    //mostrando el resultado usando la sentencia For each
+        for(int num: numeros){
+            System.out.println(num);
+         }
+         
+            System.out.println("");
+     }
     /**
      * Crear una lista de numeros enteros del 1 al 5, recorrerlos y mostarlos de las 3 formas
      */
     public void ejercicio4() {
+        List<Integer> listado = new ArrayList<Integer>();
+        listado.add(1);
+        listado.add(2);
+        listado.add(3);
+        listado.add(4);
+        listado.add(5);
         
+        //mostrando el resultado usando la sentencia For
+        for (int i=0;i<listado.size();i++){
+            System.out.println(listado.get(i));
+        }
+         
+            System.out.println("Lista generada usando 'For' ");
+         
+    //mostrando el resultado usando la sentencia For each
+        for(Integer list: listado){
+            System.out.println(list);
+         }
+         
+            System.out.println("Lista generada usando 'For each'");
+            
+    //usando Iterator
+        Iterator<Integer> iter = listado.iterator();
+         
+         while(iter.hasNext()){
+             System.out.println(iter.next());
+         }       
+            System.out.println("Lista generada usando 'Iterator'");
     }
+     
 }
