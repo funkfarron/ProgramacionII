@@ -110,7 +110,7 @@ public class TrabajoPractico1 {
          while(iter.hasNext()){
              System.out.println(iter.next());
          }       
-            System.out.println("Lista generad usando 'Iterator'");
+            System.out.println("Lista generada usando 'Iterator'");
     }
      
 }
