@@ -1,6 +1,7 @@
 package programacion2;
 
 import ejercicios.TrabajoPractico1;
+import ejercicios.TrabajoPractico2;
 import ejercicios.TrabajoPractico3;
 import java.util.List;
 import modelos.DetallePedido;
@@ -10,9 +11,11 @@ import modelos.Pedido;
 public class Programacion2 {
 
     public static void main(String[] args) throws Exception {
-        TrabajoPractico1 practico1 = new TrabajoPractico1();
-        practico1.ejercicio4();
+        /*TrabajoPractico1 practico1 = new TrabajoPractico1();
+        practico1.ejercicio4();*/
         
+        TrabajoPractico2 practico2 = new TrabajoPractico2();
+        practico2.ejercicio6();
         
         /*TrabajoPractico3 practico = new TrabajoPractico3();
         

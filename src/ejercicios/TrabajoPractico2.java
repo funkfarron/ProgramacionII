@@ -1,6 +1,8 @@
 package ejercicios;
 
 import excepciones.ExcepcionSimpatica;
+import excepciones.ExcepcionCristian;
+
 
 /**
  * Excepciones
@@ -63,9 +65,13 @@ public class TrabajoPractico2 {
     }
     
     /**
-     * Crear una excepcion propia y capturarla y mostrar su contenido.
+     * Crear una excepcion propia, capturarla y mostrar su contenido.
      */
     public void ejercicio6() {
-        
+        try {
+            throw new ExcepcionCristian();
+        } catch (ExcepcionCristian e) {
+            System.out.println("Excepcion: "+e);
+        }
     }
 }
