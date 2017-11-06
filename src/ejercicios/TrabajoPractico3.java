@@ -29,7 +29,7 @@ public class TrabajoPractico3 {
     /**
      * Pedido
      * 1 Cliente
-     * 2 Detalles de PEdidos
+     * 2 Detalles de Pedidos
      * * 1 Mercaderia
      * * Cantidad
      * @return Pedido
@@ -78,7 +78,31 @@ public class TrabajoPractico3 {
         pedido1.setFecha(new Date());
         pedido1.setDetalles(listaDetalles);
         
-        return pedido1;
-        
+        return pedido1;        
     }
-}
+    
+    /**
+     * LLamar al metodo del ejercicio 2 para crear un pedido completo
+     * y agregar un nuevo detalle que incluya una mercaderia nueva
+     */
+    public void ejercicio3() {
+        Pedido pedido = ejercicio2();
+         
+        Mercaderia mercaderia3 = new Mercaderia();
+        mercaderia3.setCodigo("COD003");
+        mercaderia3.setNombre("Queso");
+        mercaderia3.setValor(30);
+        mercaderia3.setPeso(0.5f);
+        
+        DetallePedido detalle3 = new DetallePedido();
+        detalle3.setMercaderia(mercaderia3);
+        detalle3.setCantidad(5);
+        
+        pedido.getDetalles().add(detalle3);
+        
+        System.out.println("Nombre Producto: " + pedido.getDetalles().get(2).getMercaderia().getNombre());
+                
+        System.out.println("Cantidad: " + pedido.getDetalles().get(2).getCantidad());
+ 
+    }
+    }

@@ -14,11 +14,12 @@ public class Programacion2 {
         /*TrabajoPractico1 practico1 = new TrabajoPractico1();
         practico1.ejercicio4();*/
         
-        TrabajoPractico2 practico2 = new TrabajoPractico2();
-        practico2.ejercicio6();
+        /*TrabajoPractico2 practico2 = new TrabajoPractico2();
+        practico2.ejercicio6();*/
         
-        /*TrabajoPractico3 practico = new TrabajoPractico3();
-        
+        TrabajoPractico3 practico3 = new TrabajoPractico3();
+        practico3.ejercicio3();
+        /*
         Pedido pedido;
         
         pedido = practico.ejercicio2();
