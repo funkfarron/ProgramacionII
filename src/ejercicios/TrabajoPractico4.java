@@ -81,6 +81,26 @@ public class TrabajoPractico4 {
      * @param clientes
      */
     public void ejercicio3() {
-
+        List<Cliente> listaClientes = new ArrayList<>();
+         
+        //int cont=1;
+        for(int i=0;i<20;i++){
+            Cliente cliente = new Cliente();
+             
+            cliente.setId(i);
+            cliente.setNombre("Cliente "+ i);
+            cliente.setEmail("Email "+ i);
+             
+            listaClientes.add(cliente);
+            //cont++;
+        }
+         
+        for(int i=0;i<20;i++){
+            if(listaClientes.get(i).getId()%2==1){
+                System.out.println("ID: "+listaClientes.get(i).getId());
+                System.out.println("Nombre: "+listaClientes.get(i).getNombre());
+                System.out.println("Email: "+listaClientes.get(i).getEmail());
+            }
+        }
     }
 }

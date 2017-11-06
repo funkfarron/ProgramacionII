@@ -3,6 +3,7 @@ package programacion2;
 import ejercicios.TrabajoPractico1;
 import ejercicios.TrabajoPractico2;
 import ejercicios.TrabajoPractico3;
+import ejercicios.TrabajoPractico4;
 import java.util.List;
 import modelos.DetallePedido;
 import modelos.Mercaderia;
@@ -17,8 +18,12 @@ public class Programacion2 {
         /*TrabajoPractico2 practico2 = new TrabajoPractico2();
         practico2.ejercicio6();*/
         
-        TrabajoPractico3 practico3 = new TrabajoPractico3();
-        practico3.ejercicio3();
+        /*TrabajoPractico3 practico3 = new TrabajoPractico3();
+        practico3.ejercicio3();*/
+        
+        TrabajoPractico4 practico4 = new TrabajoPractico4();
+        practico4.ejercicio3();
+        
         /*
         Pedido pedido;
         
